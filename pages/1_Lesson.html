@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Touring Turing</title>
+<title>Code School</title>
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <link rel="stylesheet" type="text/css" href="css/styles.css"/>
@@ -59,10 +59,10 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Touring Turing</h1>
+<h1 class="title">Code School</h1>
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
-      <a href="https://github.com/MarcScott/7-CS-Turing">Fork me on GitHub</a>
+      <a href="https://github.com/stsb11/9-CS-codeSchool">Fork me on GitHub</a>
     </div>
   </div>
 <div id="stickyribbon">
@@ -79,44 +79,31 @@ for the JavaScript code in this tag.
     </ul>
   </div>
 <div id="outline-container-sec-1" class="outline-2 activity">
-<h2 id="sec-1"><span class="section-number-2">1</span> Alan Turing</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="figure">
-<p><img src="http://upload.wikimedia.org/wikipedia/en/c/c8/Alan_Turing_photo.jpg" alt="Alan_Turing_photo.jpg" />
-</p>
-</div>
-</div>
-<div id="outline-container-sec-1-1" class="outline-3 learn">
-<h3 id="sec-1-1">Learn It</h3>
-<div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
-<li>In 1936, a few years before the outbreak of World War II, Alan Turing invented the <b>Turing Machine</b>.
+<li>Any problem that can be solved by a computer requires the application of only three different programming constructs: <b>Variables</b>, <b>If statements</b> (known as conditionals) and <b>while loops</b>. 
 </li>
-<li>This was a <i>hypothetical</i> device (not one to be actually built) that could read and change symbols on an infinitely long tape, according to a table of rules.
+<li>There are many other tools and techniques that can be used when programming to help solve problems more elegantly (e.g. functions, classes, databases, parallel processing), but the three core concepts are essential. 
 </li>
-<li>With this simple idea, Computer Science was born, as the <b>Turing Machine</b> was theoretically capable of performing any calculation that was computable.
+<li>In this unit, you'll work through a series of simple exercises which will help you apply these ideas in different ways to solve problems yourself. 
 </li>
-<li>It took a few more years before actual computers were constructed, but even today we can talk about computers and programming languages in terms of their <code>Turing completeness</code>. This means that they are able to do exactly what a <b>Turing Machine</b> can do.
+<li>In this first lesson, we'll cover the first third of the knowledge needed to be '<a href="https://simple.wikipedia.org/wiki/Turing_complete">Turing Complete</a>' by playing with variables.
+</li>
+<li>We'll use Python 3, but these prolems could be solved in any other Turing Complete language. 
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2 activity">
-<h2 id="sec-2"><span class="section-number-2">2</span> Python Variables</h2>
-<div class="outline-text-2" id="text-2">
-</div>
-<div id="outline-container-sec-2-1" class="outline-3 learn">
-<h3 id="sec-2-1">Learn It</h3>
-<div class="outline-text-3" id="text-2-1">
+
+
 <ul class="org-ul">
-<li>For this project, we'll be using the Python 3 Programming language.
+<li>The year 7 'Touring Turing' unit covers all the main constructs, and can be viewed <a href="https://www.bournetocode.com/projects/7-CS-Turing/index.html">here</a>. You'll find this an excellent reference for this topic, and are encouraged to refer to it.
 </li>
-<li>You've used Scratch before, which is a Graphical Programming Language. Python does the same sort of thing, but you program using text instead of blocks.
+<li>The Harvey Mudd College in the US has an excellent CS primer that you can see <a href="http://www.cs.hmc.edu/csforall/">here</a>.
 </li>
-<li>If you're working on this outside of school, you can download it from the following links.
+<li>This topic is inspired by the popular <a href="https://projecteuler.net/archives">Project Euler</a> challenges: 
 </li>
+<li>If you're working on this at home, you can pick up Python (for free) here:
+<ul class="org-ul">
 <li><a href="https://www.python.org/ftp/python/3.4.2/python-3.4.2-macosx10.6.pkg">Python 3.4 for Mac</a>
 </li>
 <li><a href="https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64.msi">Python 3.4 for Windows</a>
@@ -126,11 +113,17 @@ for the JavaScript code in this tag.
 <li>If you're working in school, then you should find a program called IDLE, in your programs menu.
 </li>
 </ul>
+</li>
+</ul>
 </div>
 </div>
-<div id="outline-container-sec-2-2" class="outline-3 try">
-<h3 id="sec-2-2">Try It</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-sec-2" class="outline-2 activity">
+<h2 id="sec-2"><span class="section-number-2">2</span> Integral Integers</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-sec-2-1" class="outline-3 learn">
+<h3 id="sec-2-1">Learn It</h3>
+<div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Open up IDLE. You should be presented with a screen that looks a little like this:
 </li>
@@ -145,331 +138,363 @@ for the JavaScript code in this tag.
 </li>
 <li>The screen that popped up is called the <code>INTERPRETER</code>. Remember this, and what it looks like.
 </li>
-<li>We can write code in the interpreter, and it gets executed straight away.
+<li>We can write code in the interpreter, and it gets executed straight away. This is handy for trying out ideas on the fly. 
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-2-3" class="outline-3 learn">
-<h3 id="sec-2-3">Learn It</h3>
+<div id="outline-container-sec-2-2" class="outline-3 code">
+<h3 id="sec-2-2">Code It</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Integers are whole numbers (e.g. -5, 0, 9, 42&#x2026;)
+</li>
+<li>Type (copying and pasting all the lines at once <b>won't</b> work) the following:
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #268bd2;">firstNum</span> = 2
+<span style="color: #268bd2;">secondNum</span> = 3
+<span style="color: #268bd2;">addedNums</span> = firstNum + secondNum
+<span style="color: #268bd2;">multipliedNums</span> = firstNum * secondNum
+<span style="color: #268bd2;">sumsWithNums</span>=(3*(firstNum * firstNum)) / addedNums
+</pre>
+</div>
+<ul class="org-ul">
+<li>Note: Once you have hit <code>ENTER</code> you can not delete what has been executed, any more than you can unbreak an egg. If you make a mistake, just type it out again (or hit <code>alt</code> + <code>p</code> on your keyboard to bring up the last command again, and alter it from there.
+</li>
+<li>We've written some commands and these have been carried out. The computer knows the results, but none of the results are shown. 
+</li>
+<li>We need to instruct the computer to print the results&#x2026;
+</li>
+</ul>
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900; font-weight: bold;">print</span>(addedNums)
+<span style="color: #859900; font-weight: bold;">print</span>(multipliedNums)
+<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'The last answer is '</span> + <span style="color: #657b83; font-weight: bold;">str</span>(sumsWithNums))
+</pre>
+</div>
+<ul class="org-ul">
+<li>The last instruction builds a short <code>String</code>, so that we get more user-friendly feedback. 
+</li>
+<li>A string is anything we want the computer to treat as text. We need to wrap strings in quotation marks so that Python doesn't treat them as variables. 
+</li>
+<li>The the last line above, the <code>sumsWithNums</code> variable is an integer. 'The last answer is ' is a string. To use the <code>print()</code> function, we need to send it everything as the same data type. We use the <code>str()</code> function to tell Python to treat the answer as a string. 
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-3" class="outline-3 try">
+<h3 id="sec-2-3">Try It</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
-<li>One of Turing's key ideas was an infinitely long tape, upon which symbols could be added, read and changed.
-</li>
-<li>In modern computers this tape is called RAM, and is made up of very complex circuits.
-</li>
-<li>Just like in a Turning machine though, we can add data to RAM, read data from RAM and change data in RAM.
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-sec-2-4" class="outline-3 code">
-<h3 id="sec-2-4">Code It</h3>
-<div class="outline-text-3" id="text-2-4">
-<ul class="org-ul">
-<li>Let's write some data to RAM.
+<li>Let's play Countdown, but use the computer to do the calculations rather than jotting them down on paper. Start by storing the variables below. 
 </li>
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #6c71c4;">myName</span> = <span style="color: #2aa198;">'Alice'</span>
+<pre class="src src-python"><span style="color: #268bd2;">a</span> = 2
+<span style="color: #268bd2;">b</span> = 5
+<span style="color: #268bd2;">c</span> = 7
+<span style="color: #268bd2;">d</span> = 13
+<span style="color: #268bd2;">e</span> = 18
+<span style="color: #268bd2;">f</span> = 26
 </pre>
 </div>
 <ul class="org-ul">
-<li>You can obviously use your own name.
+<li>See if you can solve the following, using the rules from TV's Countdown:
+<ul class="org-ul">
+<li>Make the target number, or get as close as you can
 </li>
-<li>You have now stored your name in RAM. You have done this using a <code>variable</code>
+<li>You can use as few or as many of the numbers as you want
 </li>
-<li>For now think of a <code>variable</code> is being made up of an <i>identifier</i> (<code>myName</code>) and a <i>value</i> (<code>Alice</code>)
+<li>You can only use a number once
+</li>
+<li>You can only use +, -, * and /. 
 </li>
 </ul>
-</div>
-<div id="outline-container-sec-2-4-1" class="outline-4">
-<h4 id="sec-2-4-1">Note - Once you have hit <code>ENTER</code> you can not delete what has been executed, any more than you can unbreak an egg. If you make a mistake, just type it out again (or hit <code>alt</code> + <code>p</code> on your keyboard to bring up the last command again, and alter it from there.</h4>
-</div>
-</div>
-<div id="outline-container-sec-2-5" class="outline-3 try">
-<h3 id="sec-2-5">Try It</h3>
-<div class="outline-text-3" id="text-2-5">
-<ul class="org-ul">
-<li>Turing's original idea called for an infinitely long tape, that we could store an infinite amount of information on.
 </li>
-<li>RAM is pretty big, even if it's not infinite. A typical Computer might have anywhere between 2Gb and 16Gb or RAM.
-</li>
-<li>This would be enough space to store between 1000000000 and 4000000000 characters, which is enough for us.
-</li>
-<li>Try creating some variables for your friend's names. Each one must have it's own unique <i>identifier</i> though
+<li>e.g. If I wanted to make 116, I could do this&#x2026;
 </li>
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #6c71c4;">firstFriendName</span> = <span style="color: #2aa198;">'Robert'</span>
-<span style="color: #6c71c4;">secondFriendName</span> = <span style="color: #2aa198;">'Charles'</span>
-<span style="color: #6c71c4;">thirdFriendName</span> = <span style="color: #2aa198;">'David'</span>
-<span style="color: #6c71c4;">fourthFriendName</span> = <span style="color: #2aa198;">'Eve'</span>
+<pre class="src src-python"><span style="color: #268bd2;">step1</span>= f * b
+<span style="color: #268bd2;">step2</span> = a * c
+<span style="color: #268bd2;">result</span> = step1 - step2
+<span style="color: #859900; font-weight: bold;">print</span>(result)
 </pre>
 </div>
-</div>
-</div>
-<div id="outline-container-sec-2-6" class="outline-3 learn">
-<h3 id="sec-2-6">Learn It</h3>
-<div class="outline-text-3" id="text-2-6">
-<ul class="org-ul">
-<li>We have to be careful with <i>identifiers</i> for our variables.
-</li>
-<li>Try this and see what happens:
-</li>
-</ul>
-<div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #6c71c4;">5thFriendName</span> = <span style="color: #2aa198;">'Faith'</span>
-</pre>
-</div>
-<ul class="org-ul">
-<li>You'll get back a message saying you've used <code>invalid syntax</code>.
-</li>
-<li>This is known as a syntax error. It means you haven't conformed to the rules of the language.
-</li>
-<li>Here are the rules for Python's Variable Identifiers:
-<ol class="org-ol">
-<li>Must not start with a number.
-</li>
-<li>Must not contain symbols like !, @, #, $, % etc.
-</li>
-<li>Must not contain spaces (use <code>_</code> or <code>-</code> instead)
-</li>
-<li>Are case sensitive (<code>myname</code>, <code>myName</code>, <code>MyName</code> and <code>MYNAME</code> would all be different variable identifiers.)
-</li>
-</ol>
-</li>
-<li>There's also a few words you should avoid for identifiers, like <code>not</code> and <code>continue</code>, but you'll learn these as you go along.
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-sec-2-7" class="outline-3 code">
-<h3 id="sec-2-7">Code It</h3>
-<div class="outline-text-3" id="text-2-7">
-<ul class="org-ul">
-<li>Now we have some variables stored, we'd best learn how to read them, as that was one of the stipulations of the Turing machine's tape.
-</li>
-<li>You can read the value of a variable just by writing it's name.
-</li>
-</ul>
-<div class="org-src-container">
 
-<pre class="src src-python">myName
-secondFriendName
-</pre>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-2-8" class="outline-3 code">
-<h3 id="sec-2-8">Code It</h3>
-<div class="outline-text-3" id="text-2-8">
 <ul class="org-ul">
-<li>We also needed to be able to change the variables. 
-</li>
-<li>Let's have a go at that.
-</li>
-</ul>
-<div class="org-src-container">
-
-<pre class="src src-python"><span style="color: #6c71c4;">firstFriendName</span> = <span style="color: #2aa198;">'Bob'</span>
-<span style="color: #6c71c4;">secondFriendName</span> = <span style="color: #2aa198;">'Charlie'</span>
-<span style="color: #6c71c4;">thirdFriendName</span> = <span style="color: #2aa198;">'Dave'</span>
-</pre>
-</div>
+<li>Try and solve these, printing the result to the screen&#x2026;
 <ul class="org-ul">
-<li>Now use the identifiers to read the values and make sure they have changed.
+<li>14
+</li>
+<li>70
+</li>
+<li>1
+</li>
+<li>234
+</li>
+<li>425,880
+</li>
+<li>What do you get if you do (a+b+c)+(d*e*f)?
+</li>
+<li>Set a target number (that you know you can make) for the person next to you
 </li>
 </ul>
-</div>
-</div>
-<div id="outline-container-sec-2-9" class="outline-3 badge">
-<h3 id="sec-2-9">Badge It - Silver</h3>
-<div class="outline-text-3" id="text-2-9">
-<ul class="org-ul">
-<li>Assign variables for all your family. For instance;
-</li>
-</ul>
-<div class="org-src-container">
-
-<pre class="src src-python"><span style="color: #6c71c4;">mum</span> = <span style="color: #2aa198;">'Alice'</span>
-<span style="color: #6c71c4;">dad</span> = <span style="color: #2aa198;">'Bob'</span>
-<span style="color: #6c71c4;">cat</span> = <span style="color: #2aa198;">'Eve'</span>
-</pre>
-</div>
-<ul class="org-ul">
-<li>Demonstrate that you can display the variable values in your <code>INTERPRETER</code>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div id="outline-container-sec-3" class="outline-2 activity">
-<h2 id="sec-3"><span class="section-number-2">3</span> Python Data Types</h2>
+<h2 id="sec-3"><span class="section-number-2">3</span> String Theory</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-sec-3-1" class="outline-3 badge">
-<h3 id="sec-3-1">Badge It - Gold</h3>
+<div id="outline-container-sec-3-1" class="outline-3 try">
+<h3 id="sec-3-1">Try It</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
-<li>Not all variable values are the same.
+<li>Let's look at strings for a moment
 </li>
-<li>Copy and paste the following into your interpreter - <b>one line at a time</b>
-</li>
-</ul>
-<div class="org-src-container">
-
-<pre class="src src-python"><span style="color: #6c71c4;">foo</span> = 10
-<span style="color: #6c71c4;">bar</span> = 3.142
-<span style="color: #6c71c4;">baz</span> = <span style="color: #2aa198;">'Hello World!'</span>
-<span style="color: #6c71c4;">qux</span> = <span style="color: #268bd2;">True</span>
-</pre>
-</div>
-<ul class="org-ul">
-<li>Now, for each of the variables, you can find out it's type using the <code>type()</code> inbuilt function.
+<li>Type these lines into the interpreter, or paste them in one at a time:
 </li>
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #6c71c4;">type</span>(foo)
+<pre class="src src-python"><span style="color: #268bd2;">foo</span> = <span style="color: #2aa198;">'Hello'</span>
+<span style="color: #268bd2;">bar</span> = <span style="color: #2aa198;">' '</span>
+<span style="color: #268bd2;">baz</span> = <span style="color: #2aa198;">'World'</span>
+
+<span style="color: #859900; font-weight: bold;">print</span>(foo + bar + baz)
 </pre>
 </div>
 <ul class="org-ul">
-<li>The interpreter will tell you the class of the variable.
+<li>A <code>character</code> is a single letter, number or punctuation mark (e.g. 'h')
+</li>
+<li>We can pick out the individual characters by giving Python the index of the character we want, or even a range of indices. Remember that while humans like to count starting at 1, computers tend to start at 0. Try this:
+</li>
+</ul>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900; font-weight: bold;">print</span>(foo[0])
+<span style="color: #859900; font-weight: bold;">print</span>(baz[1:3])
+<span style="color: #859900; font-weight: bold;">print</span>(foo + bar + baz)
+
+<span style="color: #268bd2;">newWord</span> = baz[0:3] + baz[4]
+<span style="color: #859900; font-weight: bold;">print</span>(newWord)
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>By manipulating the contents of <code>foo</code>, <code>bar</code> and <code>baz</code>, create the following strings in different variables and print them. Feel free to recylcle previous variables to solve the last one.
+<ul class="org-ul">
+<li>'WWW'
+</li>
+<li>'He'
+</li>
+<li>'Held'
+</li>
+<li>'He Held WWW World'
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3 learn">
+<h3 id="sec-3-2">Learn  It</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Python is full of different functions we can use to help us out when we try and code different things.
+</li>
+<li>One example is <code>input()</code>, which allows us to collect user input from the keyboard so we can make programs more interactive. The data entered by the user is stored as a string.
+</li>
+<li>Another is <code>len()</code>. This returns the length of any string that is entered as an integer. This can be really handy.
+</li>
+<li>Rather than working in the interpreter, we'll create a short program this time. In the IDLE window, click <code>File</code>, then <code>New</code>
+</li>
+<li>Save this empty window straight away, and call it <code>pyInput.py</code>
+</li>
+<li>Now copy and paste this code:
 </li>
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python">&lt;<span style="color: #859900;">class</span> <span style="color: #2aa198;">'int'</span>&gt;
+<pre class="src src-python"><span style="color: #268bd2;">yourName</span>=<span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'What is your name: '</span>)
+<span style="color: #268bd2;">faveNumber</span>=<span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">"What's your favourite number? "</span>)
+
+<span style="color: #268bd2;">faveNumber</span> = 2 * <span style="color: #657b83; font-weight: bold;">int</span>(faveNumber)
+<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #657b83; font-weight: bold;">str</span>(faveNumber/2) + <span style="color: #2aa198;">" is good, but "</span> + <span style="color: #657b83; font-weight: bold;">str</span>(faveNumber) + <span style="color: #2aa198;">" is twice as good."</span>)
+
+<span style="color: #268bd2;">nameLength</span>=<span style="color: #657b83; font-weight: bold;">len</span>(yourName)
+<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'Let me tell your something interesting, '</span> + yourName)
+<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'Your name has '</span> + <span style="color: #657b83; font-weight: bold;">str</span>(nameLength) + <span style="color: #2aa198;">' characters in it'</span>)
+
+<span style="color: #268bd2;">lastLetter</span>=yourName[nameLength-1:nameLength]
+<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">'The last letter of your name is '</span> + lastLetter + <span style="color: #2aa198;">'.'</span>)
 </pre>
 </div>
+
 <ul class="org-ul">
-<li>This would tell me that the data-type was an <code>int</code>, which is short for <i>integer</i>.
+<li>Save the program (either <code>File</code> then <code>Save</code> or use the keyboard shortcut <code>Ctrl+S</code>, then hit the <code>F5</code> key to run it
 </li>
-<li>Look up each of the data-types for the variables above and then use the web to find out what they each mean (in simple English).
+<li>If <code>str()</code> tells Python to treat something as a string (so we can show numbers in <code>print()</code> statements, for instance), what do you think <code>int()</code> is doing in the third line of code (<code>faveNumber = 2 * int(faveNumber)</code>)? 
+</li>
+<li>Describe to the person next to you what the penultimate (one before last) line of code is doing. 
+</li>
+<li>Why does the program need to use <code>len()</code> in order to work?
 </li>
 </ul>
+
+
+<ul class="org-ul">
+<li>Finally, we can use the <code>find</code> function to locate specific strings in other strings. If it finds the string you're looking for (a space in the example below), it returns an integer with its location. If it can't find it, it returns -1. For instance:
+</li>
+</ul>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #268bd2;">yourName</span>=<span style="color: #657b83; font-weight: bold;">input</span>(<span style="color: #2aa198;">'Enter your first and last name (e.g. John Smith): '</span>)
+<span style="color: #268bd2;">whereIsTheirSecondName</span>=yourName.find(<span style="color: #2aa198;">" "</span>)
+
+<span style="color: #859900; font-weight: bold;">print</span>(<span style="color: #2aa198;">"Hi "</span> + yourName[0:whereIsTheirSecondName])
+</pre>
 </div>
 </div>
 </div>
+</div>
+
 <div id="outline-container-sec-4" class="outline-2 activity">
-<h2 id="sec-4"><span class="section-number-2">4</span> Calculations in Python</h2>
+<h2 id="sec-4"><span class="section-number-2">4</span> Badge It</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-sec-4-1" class="outline-3 try">
-<h3 id="sec-4-1">Try It</h3>
+<div id="outline-container-sec-4-1" class="outline-3 badge">
+<h3 id="sec-4-1">Assessment</h3>
 <div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
-<li>We can use Python to perform calculations.
+<li>Create Python program files, and complete as many of the following as you can:
+<ul class="org-ul">
+<li><b>Silver</b>. Complete two tasks
 </li>
-<li>For instance, you can type into your <code>INTERPRETER</code>
+<li><b>Gold</b>. Complete four tasks
+</li>
+<li><b>Platinum</b>. Complete six tasks
 </li>
 </ul>
-<div class="org-src-container">
-
-<pre class="src src-python">6 + 4
-</pre>
-</div>
-<ul class="org-ul">
-<li>In Python we can use <code>+</code> and <code>-</code> for addition and subtraction, <code>/</code> and <code>*</code> for division and multiplication.
-</li>
-<li>There are lots of mathematical <code>operators</code> we can use. Here is a table of all of them for reference later on.
-</li>
-<li>In the examples below <code>a = 10</code> and <code>b = 20</code>
 </li>
 </ul>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<colgroup>
-<col  class="left" />
-
-<col  class="left" />
-
-<col  class="left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="left">Operator</th>
-<th scope="col" class="left">Description</th>
-<th scope="col" class="left">Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="left"><code>+</code></td>
-<td class="left">Addition - Adds values on either side of the operator</td>
-<td class="left">a + b will give 30</td>
-</tr>
-
-<tr>
-<td class="left"><code>-</code></td>
-<td class="left">Subtraction</td>
-<td class="left">b - a will give 10</td>
-</tr>
-
-<tr>
-<td class="left"><code>*</code></td>
-<td class="left">Multiplication</td>
-<td class="left">a * b will give 200</td>
-</tr>
-
-<tr>
-<td class="left"><code>/</code></td>
-<td class="left">Division</td>
-<td class="left">b / a will give 2</td>
-</tr>
-
-<tr>
-<td class="left"><code>%</code></td>
-<td class="left">Modulus - <b>remainder</b> of a division</td>
-<td class="left">b % a will give 0</td>
-</tr>
-
-<tr>
-<td class="left"><code>**</code></td>
-<td class="left">To the power of</td>
-<td class="left">a**b will give 10 to the power 20</td>
-</tr>
-
-<tr>
-<td class="left"><code>//</code></td>
-<td class="left">Division and round down</td>
-<td class="left">9//2 is equal to 4 and 9.0//2.0 is equal to 4.0</td>
-</tr>
-</tbody>
-</table>
 <ul class="org-ul">
-<li>We can also use brackets, like you would do in maths.
+<li><b>Task 1:</b> Wordsmith
+<ul class="org-ul">
+<li>Ask the user to type three words, and store them in three variables
+</li>
+<li>Store the first letter of the first word, the second letter of the second and the third letter of the third in one variable
+</li>
+<li>Print a message to the user, saying 'Your new word is ' and the new word your program invented in the previous step
 </li>
 </ul>
-<div class="org-src-container">
+</li>
+</ul>
 
-<pre class="src src-python">(24+1)*4
-</pre>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-4-2" class="outline-3">
-<h3 id="sec-4-2">Badge It - Platinum</h3>
-<div class="outline-text-3" id="text-4-2">
+
 <ul class="org-ul">
-<li>Use Python to find the answers to the following questions.
-<ol class="org-ol">
-<li>1929 x 64
+<li><b>Task 2:</b> Times table
+<ul class="org-ul">
+<li>Ask the user for a number.
 </li>
-<li>39483 ÷ 321
+<li>Print out the multiplication table for that number, going up to 12x. E.g.
 </li>
-<li>The remainder when 123 is divided by 2
+<li>Give me a number: 5
 </li>
-<li>1234 raised to the power of 4
+<li>5
 </li>
-<li>What is 15% of 50 (remember that % in Python is modulus and not percent)
+<li>10
 </li>
-</ol>
+<li>15
+</li>
+<li>etc
+</li>
+</ul>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>Task 3:</b> Tidy tables
+<ul class="org-ul">
+<li>Complete task 2, then improve the layout to look like this&#x2026;
+</li>
+<li>Give me a number: 5
+</li>
+<li>1 x 5 = 5
+</li>
+<li>2 x 5 = 10
+</li>
+<li>3 x 5 = 15
+</li>
+<li>etc
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>
+<b>Task 4:</b> The greeter
+</p>
+<ul class="org-ul">
+<li>Ask the user for their title (e.g. Miss), first name (e.g. Susan) and last name (e.g. Boyle).
+</li>
+<li>Print their fully name (e.g. Miss Susan Boyle)
+</li>
+<li>Print their initials (e.g. 'S.B.'), with full stops between them
+</li>
+<li>Print their name using their first initial (e.g. Miss S. Boyle)
+</li>
+<li>Print a showbiz style name (e.g. SuBo) by taking the first two letters of both names, and concatenating them (i.e. sticking them together).
+</li>
+</ul>
+
+
+<p>
+<b>Task 5:</b> Index hero
+</p>
+<ul class="org-ul">
+<li>Store 'the quick brown fox jumps over the lazy dog' as a variable
+</li>
+<li>Store the word 'python' in a new variable, by using only the previous variable
+</li>
+<li>Print the contents of your new variable.
+</li>
+</ul>
+
+
+<p>
+<b>Task 6:</b> Finders Keepers
+</p>
+<ul class="org-ul">
+<li>Ask the user to enter three words
+</li>
+<li>Break up the words, and show them in turn.
+</li>
+<li>"Enter three words:" How are you"
+</li>
+<li>First word: How
+</li>
+<li>Second word: are
+</li>
+<li>Third word: you
+</li>
+<li><i>Tip:</i> If I was doing this, I'd start by locating the first word, and store the remaining two in a new variable.
 </li>
 </ul>
 </div>
