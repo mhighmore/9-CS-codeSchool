@@ -193,12 +193,12 @@ else:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-- *Silver:* Write a 'Guess what number I'm thinking of game. 
+- *Silver:* Write a 'Guess what number I'm thinking of' game. 
     - The number to be guessed will be 7.
     - If the player guesses too low or high, they should see a message saying so, and encouraging them to run the game again.
     - If they guess correctly, a message of congratulations should appear.
 - *Gold:* 
-    - Modify the program to say how far out they are. If they typed 8, the program should say 'you're 1 out of getting it right', rather than simply higher or lower. 
+    - Modify the program to say how far out they are. If they typed 8, the program should say 'you're 1 away from getting it right', rather than simply higher or lower. 
 - *Platinum:* 
     - Modify the program to choose random numbers. 
     - You'll need to [[http://lmgtfy.com/?q%3Drandom%2Bnumbers%2Bin%2Bpython%2B3][research]] how to do this online.

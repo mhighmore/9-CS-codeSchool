@@ -5,13 +5,13 @@
 #+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil
 
-#+TITLE: Touring Turing
-#+AUTHOR: Marc Scott
+#+TITLE: Code School
+#+AUTHOR: Stephen Brown
 
 #+BEGIN_HTML
   <div class="github-fork-ribbon-wrapper left">
     <div class="github-fork-ribbon">
-      <a href="https://github.com/MarcScott/7-CS-Turing">Fork me on GitHub</a>
+      <a href="https://github.com/stsb11/9-CS-codeSchool">Fork me on GitHub</a>
     </div>
   </div>
 <div id="stickyribbon">
@@ -92,7 +92,7 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
-* Scripting in Python
+* Loop the loop
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -100,35 +100,72 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Up until now you have been coding in the =INTERPRETER=
-- When Turing came up with the concept of his /Turing Machine/ he imagined that cards would be used where instructions could be written for the machine to act upon, depending upon what was written on the tape.
-- We want to use the Python equivalent of these cards.
-- We call these programs or scripts
+- With variables and conditionals covered, the last step is to use loops.
+- Put simply, a loop is any instruction that you perform repeatedly.
 ** Try It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- Find and open IDLE again.
-- Now using your keyboard, hit =Ctrl= + =n= to make a new file.
-- A second window should open up that looks like this.
-[[file:img/script.png]]
-- At the moment it is /Untitled/ so we had best give it a name.
-- Hit =Ctrl= + =s= on your keyboard to save the file.
-- Give it the name =firstScript.py=
-- *Make sure you save it in a new directory, and not in the default chosen by IDLE.*
-- The =.py= file extension is important. It lets the Operating System know that the file needs to be run with Python, and not another application like Notepad.
-- With the =.py= extension, you'll also get help with the language syntax as key words will be coloured.
+- Let's make a countdown timer.
+- Copy the following code into a new program:
+
+#+begin_src python
+import time
+howManyTimes=5
+
+print("Let's count down!")
+
+while howManyTimes>0:
+    print(howManyTimes)
+    time.sleep(1)
+    howManyTimes-=1
+
+print('Lift off!')
+#+end_src
+
+- By itself, Python can't handle time. One of the great things about Python is the ability to import 'libraries' of code, to provide additional functionality. There are advanced maths libraries, ones for random numbers, graphics, graph plotting, games and so on). The =import time= line pulls in some new functions we can use later. 
+- In this program, we started by initialising a variable (=howManyTimes=), and then printed a message.
+- Next, we started our loop. We told Python that it needs to repeat the instructions that are tabbed in over and over, as long as the value of =howManyTimes= is larger than zero.
+- After printing the current value of =howManyTimes= out in the interpreter, we wait for one second.
+- Next, the value of howManyTimes is decreased by 1 (so now it's worth 9).
+- The loop restarts, and the result is to see the countdown shown on the screen.
+
+- *Question:* Try and guess what would happen if the =howManyTimes-=1= line wasn't inside the loop? Try it to confirm. We call this effect an /Infinite Loop/. 
+- See if you can modify the program to ask the user what number they'd like to count up to.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
-- Let's write a simple script in our new window. If you see the keyword =SCRIPT= in this resource you know you should be writing in this window. If you see the keyword =INTERPRETER= you know you should be writing in the interpreter window.
+- Let's look at another example of a loop, combining the different ideas we've looked at before together. We're going to write a program which will tell if a number is prime or not.
+- As you'll know, a prime number is one which has precisely two distinct factors (the number itself and 1). 
+- There are a few approaches that can be taken. A simple algorithm could be:
+   - Store the number to check (=numberToTest=)
+   - Assume the number is prime until proven otherwise (=isItPrime=True=)
+   - Store the first number to check (=numberToCheck=2=).
+   - Loop as long as =numToTest= is larger than =numToCheck=...
+      - See if the modulo (remainder) of =numberToTest= and =numberToCheck= is 0.
+      - If it is, this can't be a prime number (=isItPrime=False=)
+   - Print out the result once the loop is complete.
+
+- The code would look like this:
 #+begin_src python
-foo = 10
-bar = 12
-baz = foo + bar
+numberToTest=int(input('Enter a number: '))
+numberToCheck=2
+isItPrime=True
+
+while numberToTest>numberToCheck:
+    if numberToTest%numberToCheck==0:
+        isItPrime=False
+
+    numberToCheck+=1
+
+if isItPrime==True:
+    print('That number is prime.')
+else:
+    print("That number isn't prime.")
 #+end_src
-- You need to save your file again =Ctrl= + =s= and then use the =F5= key to run the program.
+
+- 
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
