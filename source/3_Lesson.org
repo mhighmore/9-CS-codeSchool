@@ -165,7 +165,7 @@ else:
     print("That number isn't prime.")
 #+end_src
 
-- 
+- Just like with conditionals (=If= statements), we can nest loops too. This could be as simple as putting the above program into a loop to allow the user to use the program a few 
 ** Learn It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
