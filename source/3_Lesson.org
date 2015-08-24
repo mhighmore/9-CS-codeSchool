@@ -132,6 +132,31 @@ print('Lift off!')
 
 - *Question:* Try and guess what would happen if the =howManyTimes-=1= line wasn't inside the loop? Try it to confirm. We call this effect an /Infinite Loop/. 
 - See if you can modify the program to ask the user what number they'd like to count up to.
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- You can use while loops to check for lots of different conditions.
+- 
+
+#+begin_src python
+yourWords=''
+attemptsNeeded=0
+print("SECURITY ACCESS")
+print('')
+yourWords=input("What's the password? ")
+
+while yourWords!='correcthorsebatterystaple':
+    print("You didn't say the magic word!")
+    yourWords=input("Try again - what's the password? ")
+    
+
+print('ACCESS GRANTED. Cheat-mode enabled.')
+print('You needed ' + str(attemptsNeeded) + ' attempts to get in.')
+#+end_src
+
+- *Question:* Try and guess what would happen if the =howManyTimes-=1= line wasn't inside the loop? Try it to confirm. We call this effect an /Infinite Loop/. 
+- See if you can modify the program to ask the user what number they'd like to count up to.
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
